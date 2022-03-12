@@ -1,7 +1,127 @@
-@import "../libs/bootstrap/scss/bootstrap.scss";
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
 
 * {
-    padding: 0%;
-    margin: 0%;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+.header {
+    font-family: var(--fontmain);
+}
+
+main {
+    justify-content: center;
+    div {
+        display: flex;
+        justify-content: center;
+        position: relative;
+        .top-img {
+            img {
+                width: 100%;
+            }
+        }     
+        .tittle {
+            position: absolute;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            padding: 2rem;
+            top: 0%;
+            color: white;
+            h1 {
+                font-size: 2rem;
+            }
+            h2 {
+                font-size: 1.25rem;
+            }
+        }
+    }   
+} 
+    
+.section {
+    .section-tittle {
+        text-align: center;
+        padding: 2rem 0rem 0rem 0rem;
+    }
+    .section-tittle--dos {
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        padding: 0rem 0rem 2rem 0rem;
+    }
+    .section-text {
+        margin: auto;
+        padding: 0rem 2rem 0rem 2rem;
+    }
+    .section-img {
+        margin: auto;
+        width: 350px;
+        height: 275px;
+        img {
+            width: 100%;
+            padding: 1rem;
+        }
+    }
+    .section-button {
+        text-align: center;
+        a {
+            text-decoration: none;
+            color: black;
+            padding: 2rem;
+        }
+    }
+}
+
+.service-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: black;
+    margin: 2rem;
+    padding: 1rem;
+    border-radius: 2rem;
+    .service-content {
+        display: flex;
+        align-items: flex-start;
+        p {
+            color: white;
+            padding: 0rem 0.5rem 0rem 0.5rem;
+        }
+    }
+}
+
+.clients-container {
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: 2rem 0rem 2rem 0rem;
+    .clients-content {
+        width: 150px;
+        padding: 1rem .5rem 1rem 0.5rem;
+        }
+        img { 
+            width: 100%;
+    }
+}
+
+.contact-container {
+    margin: 2rem 0rem 0rem 0rem;
+    background-color: black;
+    .contact-tittle {
+        h2 {
+            text-align: center;
+            padding: 2rem 0rem 2rem 0rem;
+            color: white;
+        }
+    }
+    .contact-form {
+        padding: 4rem;
+        .row {
+            background-color: white;
+            padding: 1rem;
+            border-radius: 2rem;
+        }
+    }
 }
